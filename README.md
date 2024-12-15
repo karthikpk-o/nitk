@@ -42,41 +42,9 @@ Ensure MongoDB is running and accessible. Update the `DBUSER` and `DBPASSWORD` f
 
 ---
 
-## API Endpoints
-### User Management
-#### POST `/users/create`
-**Request:**
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123",
-  "userType": "Reader"
-}
-```
-**Response:**
-```json
-{
-  "message": "User created successfully",
-  "user": {
-    "id": "123456",
-    "name": "John Doe",
-    "email": "john@example.com",
-    "userType": "Reader"
-  }
-}
-```
-
-#### DELETE `/users/delete/:id`
-**Response:**
-```json
-{
-  "message": "User deleted successfully"
-}
-```
----
-
 ## Drive Link
-Add your drive link here: [Drive Link](#)
+[Drive Link](#)
+
+This drive link contains the folder wise screenshots of each api endpoint mentioned in the table
 
 ---
