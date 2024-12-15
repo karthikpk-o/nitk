@@ -4,7 +4,7 @@
 
 I used MongoDB as the database and designed a user schema with two types of users: Authors and Readers, using discriminators to differentiate between them. The backend is built with Express, and I used Express Router to organize API routes into separate modules for users, books, and borrowing/returning books.
 
-To manage authentication, I implemented JWT tokens and added middleware to verify tokens and enforce role-based access (like only allowing authors to add or update books). All endpoints follow REST principles, with proper validations to ensure data accuracy—for example, checking if a book is in stock or limiting readers to borrowing a maximum of 5 books at a time.
+To manage authentication, I implemented JWT tokens and added middleware to verify tokens and enforce role-based access
 
 The overall structure of the project is modular and easy to maintain, making it scalable for future enhancements. I focused on handling errors gracefully and returning clear, user-friendly messages for each API response.
 
