@@ -1,5 +1,5 @@
 import express from "express";
-import { Author } from "../model/user.js";
+import { Author, Reader, User } from "../model/user.js";
 import Book from "../model/books.js"
 import authenticateUser  from "../middleware.js";
 
@@ -66,9 +66,9 @@ router.get("/", authenticateUser, async (req, res) => {
         }
 
         if (author) {
-            const authorDoc = await Author.findOne({ name: { $regex: author, $options: 'i' } });
-            if (authorDoc) {
-                query.author = authorDoc._id;  
+            const isAuthorExists = await Author.findById(author);
+            if (isAuthorExists) {
+                query.author = author;
             } else {
                 return res.status(404).json({
                     message: "Author not found.",
