@@ -41,6 +41,10 @@ JWT_SECRET=<your-jwt-secret>
 Ensure MongoDB is running and accessible. Update the `DBUSER` and `DBPASSWORD` fields in the `.env` file for a MongoDB Atlas connection or leave them blank for a local connection.
 
 ---
+## Postman Collection Link
+
+[See Collection](https://elements.getpostman.com/redirect?entityId=32460606-9f8fa081-0b17-4db2-ba17-981c4c4e1706&entityType=collection)
+Click this link to view the postman api collection
 
 ## Drive Link
 [Drive Link](https://drive.google.com/drive/folders/1-K5uPTcUffONRhyfbkyvluXNy-OGmu7Z?usp=sharing)
