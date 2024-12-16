@@ -13,8 +13,8 @@ The overall structure of the project is modular and easy to maintain, making it 
 ### Environment Variables
 Create a `.env` file in the root directory with the following content:
 ```env
-DB_USERNAME=<your-db-username>
-DB_PASSWORD=<your-db-password>
+DBUSER=<your-db-username>
+DBPASSWORD=<your-db-password>
 JWT_SECRET=<your-jwt-secret>
 ```
 
