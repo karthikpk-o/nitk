@@ -26,8 +26,8 @@ router.get("/session/validate", authenticateUser, async (req, res) => {
             res.status(200).json({
                 message: "Session is valid",
                 user: {
-                    id: decoded.id,
-                    role: decoded.role,
+                    id: decoded.userId,
+                    role: decoded.userType,
                 },
             });
         });
